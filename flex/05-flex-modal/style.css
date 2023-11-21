@@ -16,18 +16,29 @@ body {
 }
 
 .modal {
+  display: flex;
   background: white;
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  padding: 12px;
+  gap:8px;
 }
+
+.content{
+  display: flex;
+  flex-direction: column;
+  gap:8px;
+  flex-grow: 1;
+}
+
 
 .icon {
   color: royalblue;
   font-size: 26px;
   font-weight: 700;
   background: lavender;
-  width: 42px;
+  min-width: 42px;
   height: 42px;
   border-radius: 50%;
   display: flex;
@@ -42,7 +53,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   height: 24px;
-  width: 24px;
+  min-width: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -67,3 +78,4 @@ button.cancel {
   border: 1px solid #ddd;
   color: royalblue;
 }
+
